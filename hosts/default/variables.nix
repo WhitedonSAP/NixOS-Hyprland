@@ -1,10 +1,10 @@
-# 💫 https://github.com/JaKooLit 💫 #
+# 💫 https://github.com/WhitedonSAP 💫 #
 # Variables
 
 {
   # Git Configuration ( For Pulling Software Repos )
-  gitUsername = "JaKooLit";
-  gitEmail = "ejhay.games@gmail.com";
+  gitUsername = "WhitedonSAP";
+  gitEmail = "ayrtonarantes0987654321ayrt008@gmail.com";
 
   # Hyprland Settings
   extraMonitorSettings = "";
@@ -13,7 +13,8 @@
   clock24h = true;
 
   # Program Options
-  browser = "firefox"; # Set Default Browser (google-chrome-stable for google-chrome)
+  browser = "microsoft-edge"; # Set Default Browser (google-chrome-stable for google-chrome)
   terminal = "kitty"; # Set Default System Terminal
-  keyboardLayout = "us";
+  keyboardLayout = "br";
+  keyboardVariant = "abnt2";
 }
