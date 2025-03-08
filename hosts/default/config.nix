@@ -7,7 +7,7 @@
 
 { config, pkgs, host, username, options, lib, inputs, system, ...}: let
   
-  inherit (import ./variables.nix) keyboardLayout keyboardVariant;
+  inherit (import ./variables.nix) consoleKeymap keyboardLayout keyboardVariant;
     
   in {
   imports = [
