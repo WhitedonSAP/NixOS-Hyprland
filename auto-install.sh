@@ -131,12 +131,19 @@ else
 fi
 echo "-----"
 
-read -rp "$CAT Enter your keyboard layout: [ us ] " keyboardLayout
+read -rp "$CAT Enter your keyboard layout: [ i.e.: br ] " keyboardLayout
 if [ -z "$keyboardLayout" ]; then
-  keyboardLayout="us"
+  keyboardLayout="br"
 fi
 
 sed -i 's/keyboardLayout\s*=\s*"\([^"]*\)"/keyboardLayout = "'"$keyboardLayout"'"/' ./hosts/$hostName/variables.nix
+
+read -rp "$CAT Enter your keyboard variant: [ i.e.: abnt2 ] " keyboardVariant
+if [ -z "$keyboardVariant" ]; then
+  keyboardVariant="abnt2"
+fi
+
+sed -i 's/keyboardVariant\s*=\s*"\([^"]*\)"/keyboardVariant = "'"$keyboardVariant"'"/' ./hosts/$hostName/variables.nix
 
 echo "-----"
 
