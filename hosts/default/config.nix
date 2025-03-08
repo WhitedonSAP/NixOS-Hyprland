@@ -333,7 +333,7 @@
     enable = true;
   };
 
-  console.keyMap = "br-abnt2";
+  console.keyMap = "${consoleKeymap}";
 
   # For Electron apps to use wayland
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
