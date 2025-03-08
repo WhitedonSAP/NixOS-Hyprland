@@ -1,4 +1,4 @@
-# 💫 https://github.com/JaKooLit 💫 #
+# 💫 https://github.com/WhitedonSAP 💫 #
 # Users - NOTE: Packages defined on this will be on current user only
 
 { pkgs, username, ... }:
