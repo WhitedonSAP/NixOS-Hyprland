@@ -131,6 +131,13 @@ else
 fi
 echo "-----"
 
+read -rp "$CAT Enter an console keymap: [ i.e.: br-abnt2 ] " consoleKeymap
+if [ -z "$consoleKeymap" ]; then
+  consoleKeymap="br-abnt2"
+fi
+
+sed -i 's/consoleKeymap\s*=\s*"\([^"]*\)"/consoleKeymap = "'"$consoleKeymap"'"/' ./hosts/$hostName/variables.nix
+
 read -rp "$CAT Enter your keyboard layout: [ i.e.: br ] " keyboardLayout
 if [ -z "$keyboardLayout" ]; then
   keyboardLayout="br"
