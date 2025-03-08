@@ -17,4 +17,5 @@
   terminal = "kitty"; # Set Default System Terminal
   keyboardLayout = "br";
   keyboardVariant = "abnt2";
+  consoleKeymap = "br-abnt2";
 }
