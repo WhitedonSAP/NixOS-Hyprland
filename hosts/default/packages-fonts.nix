@@ -1,4 +1,4 @@
-# 💫 https://github.com/JaKooLit 💫 #
+# 💫 https://github.com/WhitedonSAP 💫 #
 # Packages and Fonts config including the "programs" options
 
 { pkgs, inputs, ...}: let
@@ -122,7 +122,7 @@
 	
 	  waybar.enable = true;
 	  hyprlock.enable = true;
-	  firefox.enable = true;
+	  #firefox.enable = true; # enable firefox
 	  git.enable = true;
     nm-applet.indicator = true;
     #neovim.enable = true;
