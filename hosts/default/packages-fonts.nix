@@ -32,6 +32,7 @@
     killall  
     libappindicator
     libnotify
+    microsoft-edge
     openssl #required by Rainbow borders
     pciutils
     vim
